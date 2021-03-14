@@ -163,7 +163,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
+                    android:layout_below="@id/rv_new_menu"
                     android:text="@string/see_more"
+                    android:layout_marginTop="24dp"
                     android:textColor="@color/primary" />
 
                 <androidx.recyclerview.widget.RecyclerView
