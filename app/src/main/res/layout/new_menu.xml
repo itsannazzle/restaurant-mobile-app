@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="@color/black"
+    android:layout_marginEnd="16dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"/>
+    <RelativeLayout
+        android:layout_marginTop="109dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp">
+        <TextView
+            android:id="@+id/food_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_xtrasmall"
+            android:textColor="@color/title"
+            android:maxLength="15"
+            android:ellipsize="end"
+            android:text="@string/event_artist"/>
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/link_small"
+            android:text="@string/price"
+            android:textColor="@color/title"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:id="@+id/times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_xtrasmall"
+            android:layout_alignParentBottom="true"
+            android:drawablePadding="4dp"
+            android:text="@string/_10m"
+            app:drawableStartCompat="@drawable/ic_time" />
+        <TextView
+            android:id="@+id/food_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_xtrasmall"
+            android:layout_toEndOf="@id/times"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="32dp"
+            android:drawablePadding="4dp"
+            android:text="@string/westren"
+            app:drawableStartCompat="@drawable/ic_send" />
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_xtrasmall"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:drawablePadding="4dp"
+            android:text="@string/rating"
+            app:drawableStartCompat="@drawable/ic_star" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

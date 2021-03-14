@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:padding="16dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp">
+
+                <TextView
+                    android:id="@+id/your_location"
+                    style="@style/link_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_location"
+                    android:textColor="@color/title" />
+
+                <TextView
+                    android:id="@+id/change"
+                    style="@style/text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/change"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/address"
+                    style="@style/text_xtrasmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/your_location"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/user_address"
+                    android:textColor="@color/bodycopy" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/search_field"
+                style="@style/input_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_field"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="4dp"
+                android:ellipsize="end"
+                android:gravity="fill"
+                android:hint="@string/search_here"
+                android:textColorHint="@color/placeholder" />
+
+            <TextView
+                style="@style/link_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/upcoming_event"
+                android:textColor="@color/title" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:isScrollContainer="false"
+                tools:listitem="@layout/upcoming_event" />
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/slider" />
+
+            <Button
+                android:id="@+id/btn_resertavion"
+                style="@style/link_small"
+                android:layout_width="343dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/primary_buttom"
+                android:text="@string/reserve_table"
+                android:textColor="@color/black" />
+
+            <TextView
+                style="@style/link_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/category"
+                android:textColor="@color/title" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_category"
+                android:layout_width="match_parent"
+                android:layout_height="590dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                tools:listitem="@layout/category" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:id="@+id/newMenu"
+                    style="@style/link_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_menu"
+                    android:textColor="@color/title" />
+
+                <TextView
+                    style="@style/text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/see_more"
+                    android:textColor="@color/primary" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_new_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/bestseller"
+                    style="@style/link_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/best_seller_drinks"
+                    android:layout_below="@id/rv_new_menu"
+                    android:layout_marginTop="24dp"
+                    android:textColor="@color/title" />
+
+                <TextView
+                    style="@style/text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/see_more"
+                    android:textColor="@color/primary" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_below="@id/bestseller"
+                    android:id="@+id/rv_bestseller_drink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="40dp"
+                    tools:listitem="@layout/best_seller_drinks" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:foregroundGravity="bottom"
+            android:keyboardNavigationCluster="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_var_item">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

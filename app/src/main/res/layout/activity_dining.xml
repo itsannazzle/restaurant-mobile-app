@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    tools:context=".Dining">
+    <Button
+        android:id="@+id/food_origin"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:textColor="@color/primary"
+        android:backgroundTint="@color/black"
+        android:text="@string/westren"
+        style="@style/text_small"/>
+    <Button
+        android:id="@+id/food_origin2"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@id/food_origin"
+        android:textColor="@color/placeholder"
+        android:backgroundTint="@color/black"
+        android:text="@string/asian"
+        style="@style/text_small"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_westren"
+        android:layout_below="@id/food_origin"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/best_seller_drinks">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

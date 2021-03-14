@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text_small">
+        <item name="fontFamily">@font/mulish_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.017</item>
+        <item name="lineHeight">24sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="text_medium">
+        <item name="fontFamily">@font/mulish_regular</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">0.075</item>
+        <item name="lineHeight">32sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="text_xtrasmall">
+        <item name="fontFamily">@font/mulish_regular</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0.075</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="display_small">
+        <item name="fontFamily">@font/playfair_display_regular</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="display_meduim">
+        <item name="fontFamily">@font/playfair_display_bold</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="link_small">
+        <item name="fontFamily">@font/mulish_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="lineHeight">24sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="link_xtrasmall">
+        <item name="fontFamily">@font/mulish_bold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+
+    <style name="input_text">
+        <item name="fontFamily">@font/mulish_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.0175</item>
+        <item name="lineHeight">24sp</item>
+        <item name="android:textColor">@color/active</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="link_medium">
+        <item name="fontFamily">@font/mulish_bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">0.0075</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+
+</resources>

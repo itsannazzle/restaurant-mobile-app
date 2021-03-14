@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:innerRadiusRatio="2.5"
+    android:shape="oval"
+    android:thickness="4dp"
+    android:useLevel="false">
+    <size android:height="70dp"
+        android:width="70dp"/>
+    <solid android:color="@color/input_bg"/>
+
+
+</shape>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--Hello this is my custom color-->
+    <color name="primary">#FFAC30</color>
+    <color name="on_primary">#171616</color>
+    <color name="active">#FAFAFA</color>
+    <color name="bodycopy">#BDBDBD</color>
+    <color name="title">#E0E0E0</color>
+    <color name="background">#1B1E24</color>
+    <color name="input_bg">#3F444B</color>
+    <color name="placeholder">#979797</color>
+    <color name="light_primary">#FFE97D</color>
+    <color name="success">#5CDF61</color>
+</resources>

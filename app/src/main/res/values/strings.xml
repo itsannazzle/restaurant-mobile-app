@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">The N Restaurant</string>
+    <string name="your_location">Your Location</string>
+    <string name="change">Change</string>
+    <string name="user_address">3891 Ranchview Dr. Richardson, California 62639</string>
+    <string name="upcoming_event">Upcoming Event</string>
+    <string name="search_here">Search here..</string>
+    <string name="event_date">Saturday, 29 Dec 2020 - 8PM</string>
+    <string name="event_artist">Artist</string>
+    <string name="reserve_table">Reserve Table</string>
+    <string name="category">Category</string>
+    <string name="food_category">Food category</string>
+    <string name="new_menu">New Menu</string>
+    <string name="see_more">See more</string>
+    <string name="_10m">10m</string>
+    <string name="westren">Westren</string>
+    <string name="lorem">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</string>
+    <string name="spotify"><u>About artist</u></string>
+    <string name="description">Description</string>
+    <string name="alergic_alert">Alergic alert</string>
+    <string name="wine">Serve better with</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="best_seller_drinks">Best seller drinks</string>
+    <string name="asian">Asian</string>
+    <string name="phone_number">0983726365271</string>
+    <string name="price">$15</string>
+    <string name="rating">4.5</string>
+</resources>
